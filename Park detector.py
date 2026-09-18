@@ -1,6 +1,7 @@
 """
 Parking Space Occupancy Detector
 ----------------------------------
+
 Controls:
     SPACE   Pause / resume
     D       Toggle debug view (thresholded mask)
@@ -73,7 +74,7 @@ def load_positions():
 
 
 def rounded_rect(img, pt1, pt2, color, thickness, radius=8):
-    """Draw a rectangle with rounded corners (outline or filled)."""
+    """Draw rectangle with rounded corners (outline or filled)."""
     x1, y1 = pt1
     x2, y2 = pt2
     fill = thickness < 0
