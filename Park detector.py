@@ -1,9 +1,6 @@
 """
 Parking Space Occupancy Detector
 ----------------------------------
-Reads slot positions saved by park_position_selector.py, analyzes a
-parking-lot video, and displays live occupancy with a redesigned HUD.
-
 Controls:
     SPACE   Pause / resume
     D       Toggle debug view (thresholded mask)

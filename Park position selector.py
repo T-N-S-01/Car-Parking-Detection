@@ -21,8 +21,7 @@ import pickle
 import os
 import sys
 
-# Resolve all filenames relative to this script's own folder, not to
-# whatever directory the script happens to be launched from.
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 IMAGE_PATH = os.path.join(BASE_DIR, "Cpark.jpeg")
 POS_FILE = os.path.join(BASE_DIR, "pos_list.pkl")
