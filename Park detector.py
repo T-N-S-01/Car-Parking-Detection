@@ -31,7 +31,7 @@ LOG_FILE = os.path.join(BASE_DIR, "occupancy_log.csv")
 SLOT_SIZE = (108, 48)   # (width, height)
 KERNEL = np.ones((3, 3), np.uint8)
 
-# ---------------------------------------------------------------- Themes ----
+
 THEMES = {
     "dark": {
         "free_border": (90, 220, 120),     # green
