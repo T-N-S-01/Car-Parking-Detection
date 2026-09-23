@@ -22,8 +22,7 @@ from datetime import datetime
 import cv2
 import numpy as np
 
-# Resolve all filenames relative to this script's own folder, not to
-# whatever directory the script happens to be launched from.
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 POS_FILE = os.path.join(BASE_DIR, "pos_list.pkl")
 VIDEO_PATH = os.path.join(BASE_DIR, "carPark.mp4")
