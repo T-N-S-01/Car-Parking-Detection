@@ -11,6 +11,7 @@ Controls:
     S       Save a snapshot (snapshot_XXXX.png)
     [ / ]   Decrease / increase "occupied" pixel-count threshold
     ESC     Quit
+
 """
 
 import pickle
