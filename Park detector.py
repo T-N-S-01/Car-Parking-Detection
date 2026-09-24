@@ -179,7 +179,7 @@ class ParkingMonitor:
         hud_h = 64
         cv2.rectangle(canvas, (0, 0), (w_frame, hud_h), theme["hud_bg"], -1)
 
-        title = f"Available: {available}/{self.total_slots}"
+        title = f"Available : {available}/{self.total_slots}"
         cv2.putText(canvas, title, (16, 32), cv2.FONT_HERSHEY_DUPLEX, 0.85,
                     theme["hud_accent"] if available > 0 else theme["hud_warn"], 1, cv2.LINE_AA)
 
