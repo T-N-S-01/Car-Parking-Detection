@@ -277,26 +277,35 @@ class ParkingMonitor:
                 break
             elif key == ord(' '):
                 self.paused = not self.paused
+
             elif key in (ord('d'), ord('D')):
                 self.debug_view = not self.debug_view
+
             elif key in (ord('t'), ord('T')):
                 self.theme_name = "light" if self.theme_name == "dark" else "dark"
+
             elif key in (ord('l'), ord('L')):
                 self.logging_enabled = not self.logging_enabled
+
                 if self.logging_enabled:
                     self._init_log()
+
                     print(f"Logging to {LOG_FILE}")
+
             elif key in (ord('s'), ord('S')) and last_good_frame is not None:
                 self.snapshot_count += 1
                 fname = f"snapshot_{self.snapshot_count:04d}.png"
                 cv2.imwrite(fname, last_good_frame)
                 print(f"Saved {fname}")
+
             elif key == ord('['):
                 self.occupied_threshold = max(50, self.occupied_threshold - 50)
+
             elif key == ord(']'):
                 self.occupied_threshold += 50
 
         self.cap.release()
+
         if hasattr(self, "_log_fh"):
             self._log_fh.close()
         cv2.destroyAllWindows()
