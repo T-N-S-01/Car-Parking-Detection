@@ -270,7 +270,7 @@ class ParkingMonitor:
                     self.fps = 0.9 * self.fps + 0.1 * (1.0 / dt)
 
             if last_good_frame is not None:
-                cv2.imshow(" ...Parking Monitor... ", last_good_frame)
+                cv2.imshow(" ....Parking Monitor.... ", last_good_frame)
 
             key = cv2.waitKey(30) & 0xFF
             if key == 27:  # ESC
