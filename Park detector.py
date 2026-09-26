@@ -130,7 +130,7 @@ class ParkingMonitor:
         self._log_fh = open(LOG_FILE, "a", newline="")
         self._log_writer = csv.writer(self._log_fh)
         if new_file:
-            self._log_writer.writerow(["timestamp", "available", "total", "occupancy_pct"])
+            self._log_writer.writerow(["timestamp ", "available ", "total ", "occupancy_pct "])
 
     def _log_row(self, available):
         if not hasattr(self, "_log_writer"):
