@@ -27,7 +27,7 @@ IMAGE_PATH = os.path.join(BASE_DIR, "Cpark.jpeg")
 POS_FILE = os.path.join(BASE_DIR, "pos_list.pkl")
 GRID_SIZE = 10
 
-# ------------- Themes --------------------
+# -------------- Themes --------------------
 THEMES = {
     "dark": {
         "bg_tint": (20, 20, 20),
