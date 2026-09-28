@@ -136,7 +136,7 @@ class SlotEditor:
 
         canvas = cv2.addWeighted(overlay, 0.18, canvas, 0.82, 0)
 
-        # ---- HUD bar ----
+        # ---- HUD bar --
         hud_h = 50
         cv2.rectangle(canvas, (0, 0), (canvas.shape[1], hud_h), theme["hud_bg"], -1)
         status = (f"Slots: {len(self.pos_list)}   "
