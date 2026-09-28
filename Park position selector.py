@@ -152,7 +152,7 @@ class SlotEditor:
     def run(self):
         print(__doc__)
         while True:
-            cv2.imshow("Slot Editor", self._draw())
+            cv2.imshow("----Slot Editor----", self._draw())
             key = cv2.waitKey(20) & 0xFF
 
             if key == 27:  # ESC
