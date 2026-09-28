@@ -120,7 +120,7 @@ class SlotEditor:
         elif event == cv2.EVENT_MBUTTONUP:
             self.dragging_index = None
 
-    # --------------------------------------------------------------- draw
+    # -------------------- draw---------------------
     def _draw(self):
         theme = THEMES[self.theme_name]
         canvas = self.image.copy()
@@ -148,7 +148,7 @@ class SlotEditor:
                     theme["accent"] if self.dirty else theme["text"], 1, cv2.LINE_AA)
         return canvas
 
-    # ---------------------------------------------------------------- run
+    # ---------------------- run-------------------
     def run(self):
         print(__doc__)
         while True:
