@@ -83,7 +83,7 @@ class SlotEditor:
         self.dirty = False
         print(f"Saved {len(self.pos_list)} slots to '{POS_FILE}'")
 
-    # ---------------------------------------------------------------- utils
+    # ------------------ utils-----------------
     def _snap(self, x, y):
         if not self.grid_snap:
             return x, y
@@ -96,7 +96,7 @@ class SlotEditor:
                 return idx
         return None
 
-    # --------------------------------------------------------------- mouse
+    # ---------------------- mouse--------------------------
     def _on_mouse(self, event, x, y, flags, param):
         if event == cv2.EVENT_LBUTTONDOWN:
             sx, sy = self._snap(x, y)
