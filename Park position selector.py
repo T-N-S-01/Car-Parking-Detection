@@ -97,6 +97,7 @@ class SlotEditor:
         return None
 
     # ---------------------- mouse--------------------------
+
     def _on_mouse(self, event, x, y, flags, param):
         if event == cv2.EVENT_LBUTTONDOWN:
             sx, sy = self._snap(x, y)
@@ -121,6 +122,7 @@ class SlotEditor:
             self.dragging_index = None
 
     # -------------------- draw---------------------
+
     def _draw(self):
         theme = THEMES[self.theme_name]
         canvas = self.image.copy()
