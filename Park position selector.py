@@ -70,7 +70,7 @@ class SlotEditor:
         cv2.namedWindow("Slot Editor")
         cv2.setMouseCallback("Slot Editor", self._on_mouse)
 
-    # ---------------------------------------------------------- persistence
+    # ----------------------- persistence----------------------------
     def _load(self):
         if os.path.exists(POS_FILE):
             with open(POS_FILE, "rb") as f:
@@ -152,7 +152,7 @@ class SlotEditor:
     def run(self):
         print(__doc__)
         while True:
-            cv2.imshow("----Slot Editor----", self._draw())
+            cv2.imshow("------Slot Editor----", self._draw())
             key = cv2.waitKey(20) & 0xFF
 
             if key == 27:  # ESC
